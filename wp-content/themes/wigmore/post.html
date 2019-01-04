@@ -1,0 +1,47 @@
+<!--
+### TASKS ###
+1 Include the WordPress header
+2 Output the post title
+3 Output the post content
+4 *Output a loop of related content if set in post with ACF (Advanced Custom Fields)
+  -- Utilise the markup provided
+  -- Conditionally check for related posts first
+  -- Complete additional tasks noted in html comments
+ 5 Include the WordPress footer
+-->
+
+<!-- 1 Include the WordPress header here -->
+
+<section class="area area--pad area--border-top">
+    <div class="container resource-post">
+        <h1 class="resource-post__title primary-underline"><!-- 2 Output the post title here --></h1>
+        <div class="resource-post__content"><!-- 3 Output the post content here --></div>
+    </div>
+</section>
+
+<!-- 4 *Output a loop of related posts set in the post itself using ACF (Advanced Custom Fields) -->
+<section class="area area--white area--pad-small">
+
+    <div class="container">
+        <h2 class="area__title area__title--related-resources">Related Resources</h2>
+    </div>
+
+    <div class="container">
+        <div class="column column--third resources-listing">
+            <a href="#set-link-here"><!-- set the href -->
+                <!-- Conditionally included the post thumbnail if no thumbnail is found use the default image below -->
+                    <img class="resources-listing__thumbnail" src="http://placehold.it/330x175/C5C5C5/C5C5C5?text=IMG" />
+                <!-- output thumbnail end -->
+
+                <div class="resources-listing__details">
+                    <h4 class="resources-listing__title"><!-- output post title here --></h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+<!-- 4 *End Output a loop of related posts set in the post itself using ACF (Advanced Custom Fields) -->
+
+
+<!-- 5 Output website footer here -->

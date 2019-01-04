@@ -1,0 +1,50 @@
+<!--
+### TASKS ###
+1 Include the WordPress header
+2 Write a conditional statement that includes the template part 'parts/hero.php' if an ACF (Advanced Custom Fields) 'include_hero' returns true
+  -- Use the correct function to include the template
+  -- Open the file 'parts/hero.php' and complete the tasks documented in a html comment within
+3 *Output the resources title that is set using ACF (Advanced Custom Fields) in the website options area of the admin
+4 *Output the resources text that is set using ACF (Advanced Custom Fields) in the website options area of the admin
+5 Return a loop of the three most recent posts
+  -- Utilise the markup provided
+  -- Conditionally check for posts first
+  -- Complete additional tasks noted in html comments
+ 6 Include the WordPress footer
+-->
+
+<!-- 1 Include the WordPress header here -->
+
+<!-- 2 Write a conditional statement that includes the template part 'parts/hero.php' if an ACF (Advanced Custom Fields) 'include_hero' returns true here -->
+
+<section class="area area--white area--pad-small">
+
+    <div class="container container--align-center">
+        <h2 class="area__title"><!-- 3 *Output the resources title that is set using ACF (Advanced Custom Fields) in the website options area of the admin here --></h2>
+        <p class="area__description"><!-- 4 *Output the resources text that is set using ACF (Advanced Custom Fields) in the website options area of the admin here --></p>
+    </div>
+
+    <!-- 5 Return a loop of the three most recent posts here -->
+    <div class="container">
+        <div class="column column--third resources-listing">
+            <a href="#output-the-link-to-the-single-post"><!-- Set the href -->
+                <!-- Conditionally output the posts thumbnail if one doesn't exist default to the below image start -->
+                    <img class="resources-listing__thumbnail" src="http://placehold.it/330x175/C5C5C5/C5C5C5?text=IMG" />
+                <!-- thumbnail end -->
+
+                <div class="resources-listing__details">
+                    <h4 class="resources-listing__title"><!-- output the post title here --></h4>
+                    <div class="resources-listing__stamp">
+                        <span class="author"><!-- Output the post author here --> | </span>
+                        <!-- Output the post date here -->
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="spacer spacer--thirds">&nbsp;</div>
+    </div>
+    <!-- 5 Loop ends -->
+
+</section>
+
+<!-- 6 Include the WordPress footer here -->
